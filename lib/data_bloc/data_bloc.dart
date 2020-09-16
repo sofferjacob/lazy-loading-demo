@@ -63,6 +63,7 @@ class DataBloc extends Bloc<DataEvent, DataState> {
           handleStreamEvent(0, event);
         })
       );
+      add(DataEventLoad(posts));
     }
     
     if (event is DataEventLoad) {

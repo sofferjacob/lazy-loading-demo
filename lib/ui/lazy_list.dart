@@ -62,4 +62,11 @@ class _LazyListScreenState extends State<LazyListScreen> {
      ),
    ); 
   }
+
+  @override
+  void dispose() { 
+    _dataBloc.close();
+    super.dispose();
+  }
+  
 }
